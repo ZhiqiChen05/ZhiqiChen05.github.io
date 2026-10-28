@@ -414,6 +414,7 @@ img {
 }
 
 .publication-card {
+  scroll-margin-top: 5rem;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.8));
   border-radius: 22px;
   padding: 1.75rem;
