@@ -54,41 +54,44 @@
 
 \section*{Research Interests}
 
-My research aims to \textbf{extend the capability boundaries of machine intelligence}, with a primary focus on \textbf{reinforcement learning} and other machine learning methods for improving reasoning and generalization in large language models. I also explore interactive learning paradigms for agents, including robotic agents, as complementary paths toward this goal.
+I aim to understand how models \textbf{acquire new capabilities} and \textbf{use the ones they already have}, and to develop \textbf{training-data strategies and reinforcement learning methods} that expand reasoning and generalization in large language models. Interactive learning for agents, including robotic agents, is a complementary way to probe and extend these capabilities.
 
-\section*{Publications and Research Reports}
+\section*{Publications}
 
 {\small $^{*}$Equal contribution.}
 
 \begin{enumerate}[leftmargin=1.5em,topsep=4pt,itemsep=7pt,parsep=0pt]
     \item
-    \textbf{\href{https://arxiv.org/abs/2504.13837}{Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?}}\\
+    \textbf{Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?}\\
     Yang Yue$^{*}$, \textbf{Zhiqi Chen}$^{*}$, Rui Lu, Andrew Zhao, Zhaokai Wang, Yang Yue, Shiji Song, Gao Huang.\\
-    \emph{NeurIPS 2025}, Oral; \textbf{Best Paper Runner-Up Award}.\\
-    \emph{ICML 2025 AI4Math Workshop}, Oral; \textbf{Best Paper Award}.
-    \href{https://github.com/LeapLabTHU/limit-of-RLVR}{[Code]}
+    \emph{NeurIPS 2025} (Oral), \textbf{Best Paper Runner-Up Award}.\\
+    \emph{ICML 2025 AI4Math Workshop} (Oral), \textbf{Best Paper Award}.\\
+    \href{https://arxiv.org/abs/2504.13837}{[Paper]} \href{https://github.com/LeapLabTHU/limit-of-RLVR}{[Code]}
 
     \item
-    \textbf{\href{https://doi.org/10.1109/ICRA57385.2026.11695822}{Learning Push-Grasp Synergy for Occluded Objects in Cluttered Environments}}\\
+    \textbf{Learning Push-Grasp Synergy for Occluded Objects in Cluttered Environments}\\
     Ziang Li, Haorui Wu, \textbf{Zhiqi Chen}, Haozhe Zhang, Yuzhe Huang, Changshui Zhang.\\
-    \emph{IEEE International Conference on Robotics and Automation (ICRA), 2026}.
+    \emph{ICRA 2026}.
+    \href{https://doi.org/10.1109/ICRA57385.2026.11695822}{[Paper]}
+\end{enumerate}
 
+\section*{Research Reports}
+
+\begin{enumerate}[leftmargin=1.5em,topsep=4pt,itemsep=7pt,parsep=0pt]
     \item
-    \textbf{\href{https://zhiqichen05.github.io/Code-as-Primitives/}{Code as Primitives: Harnessing Frontier Models to Synthesize Low-Level Robotic Skills}}\\
+    \textbf{Code as Primitives: Harnessing Frontier Models to Synthesize Low-Level Robotic Skills}\\
     \textbf{Zhiqi Chen}$^{*}$, Djengo Cyun-Jyun Fang$^{*}$, Guanning Zeng, Xiuyu Li, Haiwen Feng, Andrea Zanette.\\
     \emph{Research blog, 2026}. \textbf{Project lead}.
+    \href{https://zhiqichen05.github.io/Code-as-Primitives/}{[Blog]}
 \end{enumerate}
 
 \section*{Research Experience}
 
-\headerrow{\textbf{LeapLab, Tsinghua University}}{Feb 2025 -- Present}
-\textit{Research Intern} \hfill Advisor: Prof. Gao Huang\par
-\textbf{Limits of Reinforcement Learning with Verifiable Rewards}\par
-\textit{Co-First Author, Core Contributor}
+\headerrow{\textbf{Independent Research Project}}{Oct 2026 -- Present}
+\textit{Project Lead} \hfill Advisor: Andrea Zanette\par
+\textbf{Data Selection for Supervised Fine-Tuning}
 \begin{itemize}
-    \item Conducted large-scale RLVR experiments and pass@$k$ evaluations across model families and reasoning benchmarks to assess whether post-training expands reasoning coverage beyond the starting models.
-    \item Performed perplexity analyses of reasoning traces to examine their likelihood under the corresponding base models.
-    \item Contributed empirical evidence that gains in single-sample accuracy can coexist with reduced coverage of solvable problems at larger sampling budgets; contributed to research discussions, figures, and manuscript review.
+    \item Designing evaluation protocols and controlled baselines to study how data selection for supervised fine-tuning shapes reasoning models.
 \end{itemize}
 
 \headerrow{\textbf{Impossible Inc.}}{Jul 2026 -- Present}
@@ -96,30 +99,43 @@ My research aims to \textbf{extend the capability boundaries of machine intellig
 \textbf{Code as Primitives: Agentic Learning for Robotic Control}\par
 \textit{Project Lead}
 \begin{itemize}
-    \item Led problem formulation and method design for an interactive learning framework in which frontier-model agents synthesize low-level robotic controllers from task specifications and simulation feedback.
-    \item Designed and implemented the experimental framework combining controller-program revision with numerical parameter search, without expert demonstrations.
-    \item Led evaluation and analysis on DexVerse and Adroit, testing frozen controllers on held-out simulator initializations and examining failure cases; controllers execute without further model calls.
+    \item Led problem formulation, method design, implementation, and evaluation of a framework in which frontier-model agents synthesize low-level robot controllers from simulation feedback, without demonstrations.
+    \item Proposed separating controller-program revision from numerical parameter search, so that each structural revision is based on focused, comparable evidence.
+    \item Frozen controllers reached over 90\% held-out success across 75 DexVerse tasks and 99.2\% (119/120) across four Adroit tasks, with no model calls during execution.
 \end{itemize}
 
-\headerrow{\textbf{Data Selection for Supervised Fine-Tuning}}{Ongoing}
-\textit{Project Lead}
+\headerrow{\textbf{LeapLab, Tsinghua University}}{Feb 2025 -- Present}
+\textit{Research Intern} \hfill Advisor: Prof. Gao Huang\par
+\textbf{Limits of Reinforcement Learning with Verifiable Rewards}\par
+\textit{Co-First Author}
 \begin{itemize}
-    \item Formulating a capability-boundary perspective for analyzing existing pre-SFT data selection methods.
-    \item Investigating what existing selection criteria reveal about model capabilities and how this perspective can inform the choice of supervised fine-tuning data.
+    \item Ran all main pass@$k$ comparisons between base and RL-trained models in the paper, spanning eleven benchmarks in math, code, and visual reasoning with up to 1,024 samples per problem.
+    \item Conducted most of the paper's analyses, including perplexity analysis of reasoning traces, manual validity checks of chains of thought, and re-evaluation on filtered problems.
+    \item These experiments provided the paper's core evidence that RLVR can improve single-sample accuracy while reducing coverage of solvable problems at large sampling budgets.
 \end{itemize}
 
 \headerrow{\textbf{Physical AI Research, Tsinghua University}}{Jul 2025 -- Sep 2025}
-\textit{Research Intern}\par
+\textit{Research Intern} \hfill Advisor: Prof. Changshui Zhang\par
 \textbf{Reinforcement Learning for Push--Grasp Manipulation}
 \begin{itemize}
-    \item Studied reinforcement learning for coordinated pushing and grasping of occluded objects in cluttered environments.
+    \item Worked on reinforcement learning for coordinated pushing and grasping of occluded objects in cluttered environments.
     \item Deployed algorithms on physical robots for experimental validation, contributing to the work published at ICRA 2026.
+\end{itemize}
+
+\section*{Teaching Experience}
+
+\headerrow{\textbf{Tsinghua University}}{Academic Year 2024 -- 2025}
+\textit{Teaching Assistant, Calculus A}
+\begin{itemize}
+    \item Served for a full academic year as a second-year undergraduate, a role usually held by graduate students.
 \end{itemize}
 
 \section*{Honors and Awards}
 
 \begin{itemize}
-    \item \textbf{SenseTime Scholarship}, 2026; awarded to 30 undergraduates annually.
+    \item \textbf{NeurIPS 2025 Best Paper Runner-Up Award}, as co-first author.
+    \item \textbf{ICML 2025 AI4Math Workshop Best Paper Award}, as co-first author.
+    \item \textbf{SenseTime Scholarship}, 2026; awarded to 30 undergraduates nationwide annually.
     \item \textbf{National Scholarship of China}, 2025 and 2024.
     \item \textbf{Person of the Year}, Department of Automation, Tsinghua University, 2025.
     \item \textbf{Huang-Yicong AGI Scholarship}, Tsinghua University, 2025.
@@ -128,11 +144,13 @@ My research aims to \textbf{extend the capability boundaries of machine intellig
 
 \section*{Technical Skills}
 
+\textbf{Machine learning:} SFT and RL training of large language models; large-scale sampling-based evaluation across model families; reimplementation of data-selection methods.\\
+\textbf{Frameworks:} verl, vLLM, PyTorch, Hugging Face Transformers, Ray.\\
 \textbf{Programming:} Python, C, C++. \quad \textbf{Scientific writing:} \LaTeX.
 
-\section*{Leadership and Activities}
+% \section*{Leadership and Activities}
 
-\textbf{Men's Football Team, Department of Automation, Tsinghua University}\\
-Captain, 2025--2026 season; player, 2023--2025 and 2026--2027 seasons. Compete in the Tsinghua University Football League.
+% \textbf{Men's Football Team, Department of Automation, Tsinghua University}\\
+% Captain, 2025--2026 season; player, 2023--2025 and 2026--2027 seasons, competing in the Tsinghua University Football League.
 
 \end{document}

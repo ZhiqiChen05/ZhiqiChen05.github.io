@@ -122,7 +122,7 @@ h2 { font-size: 1.85rem; line-height: 1.25; letter-spacing: -.025em; }
 .contact-section .eyebrow { margin-bottom: 9px; }
 .contact-section p { font-size: 1rem; margin-bottom: 0; }
 .contact-section h2 { font-size: 1.35rem; margin-bottom: 11px; }
-.email-link { font-size: .9rem; overflow-wrap: anywhere; }
+.email-link { display: block; font-size: .9rem; overflow-wrap: anywhere; }
 .contact-section .location { color: var(--muted); font-size: .9rem; margin-top: 6px; }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; border-top: 1px solid var(--line); padding-top: 19px; padding-bottom: 25px; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0; }
@@ -149,8 +149,8 @@ h2 { font-size: 1.85rem; line-height: 1.25; letter-spacing: -.025em; }
   .intro { grid-template-columns: minmax(0, 1fr) 72px; gap: 20px 14px; margin: 22px 0 28px; padding: 22px; border-radius: 15px; }
   .intro-copy { display: contents; }
   .intro .eyebrow { grid-column: 1 / -1; grid-row: 1; margin: 0; font-size: .9rem; letter-spacing: .08em; }
-  .intro h1 { grid-column: 1; grid-row: 2; font-size: clamp(1.6rem, 7.8vw, 2.35rem); margin-top: -8px; }
-  .portrait { grid-column: 2; grid-row: 2; width: 72px; margin: 0; align-self: center; }
+  .intro h1 { grid-column: 1; grid-row: 1; font-size: clamp(1.6rem, 7.8vw, 2.35rem); margin-top: 0; }
+  .portrait { grid-column: 2; grid-row: 1; width: 72px; margin: 0; align-self: center; }
   .portrait img { aspect-ratio: 1; border-width: 3px; border-radius: 9px; }
   .portrait figcaption { display: none; }
   .research-statement { grid-column: 1 / -1; margin: 0; font-size: 1.35rem; }
