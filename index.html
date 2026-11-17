@@ -1,261 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zhiqi Chen · Academic Homepage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Castoro:wght@400;600&family=Google+Sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhiqi Chen is an undergraduate researcher at Tsinghua University studying reinforcement learning, reasoning in language models, and interactive learning for agents.">
+  <meta name="theme-color" content="#f8f9f6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zhiqi Chen | Tsinghua University">
+  <meta property="og:description" content="Understanding how models acquire and use capabilities. Reinforcement learning, language model reasoning, and interactive agents.">
+  <meta property="og:url" content="https://zhiqichen05.github.io/">
+  <meta property="og:image" content="https://zhiqichen05.github.io/image/myimage.jpg">
+  <title>Zhiqi Chen | Tsinghua University</title>
+  <link rel="canonical" href="https://zhiqichen05.github.io/">
+  <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-shell">
-      <a class="navbar-brand" href="#">
-        <i class="fa-solid fa-meteor"></i>
-        <span>Zhiqi Chen</span>
-      </a>
-      <div class="navbar-links">
-        <a href="#about">About</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="site-name" href="#about">Zhiqi Chen<span class="name-dot" aria-hidden="true">.</span></a>
+      <div class="nav-links">
+        <a href="#publications">Research</a>
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
-            </div>
-        </div>
+      </div>
     </nav>
+  </header>
 
-  <section class="hero hero-landing">
-    <div class="hero-body">
-      <div class="landing-shell">
-        <div class="landing-card">
-          <div class="hero-column hero-left">
-            <p class="landing-kicker">Follow Me...</p>
-            <h1 class="landing-title">Zhiqi Chen</h1>
-            <p class="landing-summary">
-              Undergraduate student at Tsinghua University, studying reinforcement learning for reasoning and agentic robotics.
-            </p>
-            <ul class="landing-bullets">
-              <li>
-                <span class="landing-bullet-icon"><i class="fa-solid fa-flask"></i></span>
-                <div><strong>Research focus:</strong> Reinforcement learning, reasoning in language models, agentic robotics.</div>
-              </li>
-              <li>
-                <span class="landing-bullet-icon"><i class="fa-solid fa-chart-line"></i></span>
-                <div><strong>Latest work:</strong> <a href="#code-as-primitives">Code as Primitives</a> explores robotic skill synthesis with frontier models and simulation feedback.</div>
-              </li>
-              <li>
-                <span class="landing-bullet-icon"><i class="fa-solid fa-people-group"></i></span>
-                <div><strong>Collaboration:</strong> Research with Prof. Gao Huang at LeapLab, and research with Haiwen Feng and Prof. Andrea Zanette at Impossible Research and Carnegie Mellon University.</div>
-              </li>
-            </ul>
-            <div class="landing-buttons">
-              <!-- <a class="landing-button" href="https://arxiv.org/pdf/2504.13837" target="_blank" rel="noopener">
-                <span class="landing-button-icon"><i class="fa-solid fa-file-pdf"></i></span>
-                <span>Paper</span>
-              </a> -->
-              <a class="landing-button" href="mailto:zq-chen23@mails.tsinghua.edu.cn">
-                <span class="landing-button-icon"><i class="fa-solid fa-envelope"></i></span>
-                <span>Contact</span>
-              </a>
-              <a class="landing-button" href="https://scholar.google.com/citations?user=Nn2pmyQAAAAJ" target="_blank" rel="noopener">
-                <span class="landing-button-icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-              <a class="landing-button" href="cv/CV_Zhiqi_Chen_202610.pdf" target="_blank" rel="noopener">
-                <span class="landing-button-icon">
-                  <i class="fa-solid fa-file-pdf"></i>
-                </span>
-                <span>CV</span>
-              </a>
-            </div>
-          </div>
-          <div class="hero-column hero-right">
-            <div class="landing-image-frame">
-              <div class="photo-placeholder">
-                <img src="image/myimage1.jpg" alt="Portrait of Zhiqi Chen">
-              </div>
-            </div>
-          </div>
+  <main id="main" class="page-shell">
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <!-- <p class="eyebrow">Tsinghua University · Undergraduate researcher</p> -->
+        <h1 id="intro-title">Zhiqi Chen</h1>
+        <p class="research-statement">Understanding how models <strong>acquire new capabilities</strong> and <strong>use what they already know.</strong></p>
+        <p>I study the mechanisms and limits of learning, with the goal of developing <strong class="key-phrase">reinforcement learning methods and training-data strategies</strong> that <strong>expand reasoning and generalization</strong> in large language models. I also explore <strong>interactive learning for agents, including robots</strong>, as a complementary path toward this goal.</p>
+        <p>I am a B.Eng. student in Automation and a member of the THU Tong Class (AGI Class), graduating in 2027. I work with <strong>Gao Huang</strong> at LeapLab and with <strong>Andrea Zanette</strong> and <strong>Haiwen Feng</strong> at Impossible Inc.</p>
+        <div class="profile-links" aria-label="Profile links">
+          <a class="cv-link" href="cv/CV_Zhiqi_Chen_202610.pdf">CV <span class="file-type">PDF</span></a>
+          <a href="mailto:zq-chen23@mails.tsinghua.edu.cn">Email</a>
+          <a href="https://scholar.google.com/citations?user=Nn2pmyQAAAAJ">Google Scholar</a>
+          <a href="https://github.com/zhiqichen05">GitHub</a>
         </div>
-            </div>
-        </div>
+        <p class="application-note"><span class="status-dot" aria-hidden="true"></span> <span>Applying for <strong>Fall 2027 PhD programs.</strong></span></p>
+      </div>
+      <figure class="portrait">
+        <img src="image/myimage.jpg" alt="Zhiqi Chen at the Allianz Arena, wearing a Bayern Munich jersey" width="3998" height="4000" fetchpriority="high" decoding="async">
+        <figcaption>At the Allianz Arena</figcaption>
+      </figure>
     </section>
 
-  <section class="section themed-section" id="about">
-    <div class="section-inner">
-      <div class="section-card">
-        <div class="kicker">Profile</div>
-        <h2 class="section-title">About Me</h2>
-        <p class="section-body">
-          I am a B.Eng. student in Automation at Tsinghua University, advised by Prof. Gao Huang in LeapLab. My research spans reinforcement learning for reasoning in language models and agentic learning for robotic control. My earlier work examined the limits of reinforcement learning with verifiable rewards (RLVR) in extending LLM reasoning. In Code as Primitives, we study how frontier models synthesize executable low-level robotic controllers and refine them through simulation feedback.
-        </p>
-        <div class="highlight-grid">
-          <div class="highlight-card">
-            <h3><i class="fa-solid fa-trophy"></i> Awards</h3>
-            <p>
-                <strong>2026</strong> <br>
-                Sensetime Scholarship <br>
-                <strong>2025 & 2024</strong> <br>
-                National Scholarship of China <br>     
-                </div>
-          <div class="highlight-card">
-            <h3><i class="fa-solid fa-microchip"></i> Interests</h3>
-            <p>Reinforcement Learning &amp; Reasoning in LLMs and MLLMs,<br>
-                Agentic Robotics &amp; World Models</p>
-                </div>
-          <div class="highlight-card">
-            <h3><i class="fa-solid fa-seedling"></i> Goal</h3>
-            <p>Find the essence of reinforcement learning for reasoning and build a universal theory for reasoning.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="publications" aria-labelledby="research-title">
+      <div class="section-heading">
+        <h2 id="research-title">Selected research</h2>
+        <p>Publications &amp; research projects <span aria-hidden="true">/</span> * Equal contribution</p>
+      </div>
+
+      <article class="research-item" id="limit-of-rlvr" aria-labelledby="rlvr-title">
+        <div class="research-category"><span class="work-number" aria-hidden="true">01</span><span>LLM reasoning</span></div>
+        <div class="research-content">
+          <p class="work-type">Conference paper <span class="role-badge">Co-first author</span></p>
+          <h3 id="rlvr-title"><a href="https://arxiv.org/abs/2504.13837">Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?</a></h3>
+          <p class="authors">Yang Yue*, <strong>Zhiqi Chen*</strong>, Rui Lu, Andrew Zhao, Zhaokai Wang, Yang Yue, Shiji Song, Gao Huang</p>
+          <div class="venues">
+            <p><strong>NeurIPS 2025</strong> · Oral <span class="award">Best Paper Runner-Up</span></p>
+            <p><strong>ICML 2025 AI4Math Workshop</strong> · Oral <span class="award">Best Paper</span></p>
+          </div>
+          <p>Across the models and benchmarks we studied, RLVR could <strong>improve single-sample accuracy</strong> while <strong>reducing coverage of solvable problems</strong> at larger sampling budgets.</p>
+          <p class="contribution"><strong>My contribution.</strong> As co-first author, I conducted <strong>core large-scale evaluations</strong> across model families and reasoning benchmarks, together with <strong>perplexity analyses</strong> that provided key evidence for our findings.</p>
+          <div class="work-links" aria-label="RLVR resources">
+            <a href="https://arxiv.org/abs/2504.13837">Paper <span aria-hidden="true">↗</span></a>
+            <a href="https://arxiv.org/pdf/2504.13837">PDF <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeapLabTHU/limit-of-RLVR">Code <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
+      </article>
+
+      <article class="research-item" id="code-as-primitives" aria-labelledby="code-title">
+        <div class="research-category"><span class="work-number" aria-hidden="true">02</span><span>Interactive agents</span></div>
+        <div class="research-content">
+          <p class="work-type">Research blog · 2026 <span class="role-badge">Project lead</span></p>
+          <h3 id="code-title"><a href="https://zhiqichen05.github.io/Code-as-Primitives/">Code as Primitives: Harnessing Frontier Models to Synthesize Low-Level Robotic Skills</a></h3>
+          <p class="authors"><strong>Zhiqi Chen*</strong>, Djengo Cyun-Jyun Fang*, Guanning Zeng, Xiuyu Li, Haiwen Feng, Andrea Zanette</p>
+          <p>We use frontier language models to synthesize robotic controllers and refine them through simulation feedback. The language model stays frozen; the resulting controllers execute without further model calls.</p>
+          <p class="contribution"><strong>My contribution.</strong> I led <strong>problem formulation, method design, implementation, and evaluation.</strong> I proposed <strong>separating controller-program revision from numerical parameter search</strong> to give the agent focused feedback for improving its design.</p>
+          <div class="work-links" aria-label="Code as Primitives resources">
+            <a href="https://zhiqichen05.github.io/Code-as-Primitives/">Read the research blog <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="research-item" id="push-grasp" aria-labelledby="robotics-title">
+        <div class="research-category"><span class="work-number" aria-hidden="true">03</span><span>Robot learning</span></div>
+        <div class="research-content">
+          <p class="work-type">Conference paper · ICRA 2026</p>
+          <h3 id="robotics-title"><a href="https://doi.org/10.1109/ICRA57385.2026.11695822">Learning Push-Grasp Synergy for Occluded Objects in Cluttered Environments</a></h3>
+          <p class="authors">Ziang Li, Haorui Wu, <strong>Zhiqi Chen</strong>, Haozhe Zhang, Yuzhe Huang, Changshui Zhang</p>
+          <p>Reinforcement learning for coordinated pushing and grasping in clutter. I contributed to physical robot deployment and experimental validation.</p>
+          <div class="work-links" aria-label="Push-grasp resources">
+            <a href="https://ieeexplore.ieee.org/document/11695822">Paper <span aria-hidden="true">↗</span></a>
+            <a href="https://doi.org/10.1109/ICRA57385.2026.11695822">DOI <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="ongoing-research" aria-labelledby="ongoing-title">
+        <p class="eyebrow">Ongoing research</p>
+        <h3 id="ongoing-title">Data selection for supervised fine-tuning</h3>
+        <p>I am leading a project advised by Andrea Zanette that examines SFT data selection through the lens of model capabilities. I study how selection criteria characterize those capabilities and how this understanding can guide the choice of training data.</p>
+      </aside>
     </section>
 
-  <section class="section themed-alt" id="education">
-    <div class="section-inner">
-      <div class="section-card">
-        <div class="kicker">Background</div>
-        <h2 class="section-title">Education</h2>
-        <ul class="timeline">
-          <li class="timeline-item">
-            <span class="timeline-marker"><i class="fa-solid fa-university"></i></span>
-            <h3 class="timeline-title">Tsinghua University</h3>
-            <p class="timeline-meta">B.Eng. in Automation · 2023 — present</p>
-            <p class="section-body" style="margin-bottom: 0;">
-              GPA 4.0/4.0 (Rank 1/173).
-            </p>
-          </li>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Research experience</h2></div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <p class="date">Feb 2025 – Present</p>
+          <div>
+            <h3>LeapLab <span class="institution">/ Tsinghua University</span></h3>
+            <p class="role">Research Intern · Advisor: Gao Huang</p>
+            <p>Reinforcement learning and reasoning in language models; co-first author of the Limits of RLVR study.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <p class="date">Jul 2026 – Present</p>
+          <div>
+            <h3>Impossible Inc.</h3>
+            <p class="role">Research Intern · Advisors: Andrea Zanette and Haiwen Feng</p>
+            <p>Interactive learning for robotic control; leading Code as Primitives.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <p class="date">Jul – Sep 2025</p>
+          <div>
+            <h3>Physical AI Research <span class="institution">/ Tsinghua University</span></h3>
+            <p class="role">Research Intern</p>
+            <p>Reinforcement learning for manipulation, with physical robot deployment and evaluation.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <li class="timeline-item">
-            <span class="timeline-marker"><i class="fa-solid fa-atom"></i></span>
-            <h3 class="timeline-title">Intern</h3>
-            <p class="timeline-meta">Impossible Inc · 2026 — present</p>
-            <p class="section-body" style="margin-bottom: 0;">
-              Exploring next-era world models.
-            </p>
-          </li>
+    <div class="background-grid">
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-heading"><h2 id="education-title">Education</h2></div>
+        <h3>Tsinghua University</h3>
+        <p class="degree">B.Eng. in Automation</p>
+        <p class="date">Aug 2023 – 2027 (expected)</p>
+        <p class="academic-record"><strong>4.0 / 4.0</strong> GPA <span aria-hidden="true">·</span> <strong>1 / 173</strong> rank</p>
+        <p class="record-note">As of July 2026</p>
+        <p>Member of the THU Tong Class (AGI Class), an interdisciplinary AI training program, since February 2024.</p>
+      </section>
 
-          <li class="timeline-item">
-            <span class="timeline-marker"><i class="fa-solid fa-atom"></i></span>
-            <h3 class="timeline-title">Research Intern</h3>
-            <p class="timeline-meta">LeapLab · 2025 — present</p>
-            <p class="section-body" style="margin-bottom: 0;">
-              Core contributor to the program Limit-of-RLVR.
-            </p>
-          </li>
-          
+      <section class="section" id="honors" aria-labelledby="honors-title">
+        <div class="section-heading"><h2 id="honors-title">Selected honors</h2></div>
+        <ul class="honors-list">
+          <li><span class="date">2026</span><div><strong>SenseTime Scholarship</strong><span class="honor-detail">Awarded to 30 undergraduates annually</span></div></li>
+          <li><span class="date">2025, 2024</span><div><strong>National Scholarship of China</strong></div></li>
+          <li><span class="date">2025</span><div><strong>Person of the Year</strong><span class="honor-detail">Department of Automation, Tsinghua</span></div></li>
+          <li><span class="date">2025</span><div><strong>Huang-Yicong AGI Scholarship</strong></div></li>
+          <li><span class="date">2025</span><div><strong>Zheng-Weimin Scholarship</strong><span class="honor-detail">First Prize</span></div></li>
         </ul>
-            </div>
-        </div>
-  </section>
+      </section>
+    </div>
 
-  <section class="section themed-section" id="publications">
-    <div class="section-inner">
-      <div class="section-card">
-        <div class="kicker">Selected Work</div>
-        <h2 class="section-title">Publications</h2>
-        <article class="publication-card" id="code-as-primitives">
-          <h3 class="publication-title">
-            Code as Primitives: Harnessing Frontier Models to Synthesize Low-Level Robotic Skills
-          </h3>
-          <p class="publication-meta">
-            <strong>Zhiqi Chen*†</strong>, Djengo Cyun-Jyun Fang*, Guanning Zeng, Xiuyu Li, Haiwen Feng, Andrea Zanette<br>
-            <em>Blog</em><br>
-            *Equal contribution · †Project lead
-          </p>
-          <!-- <p class="publication-meta">
-            Frontier models synthesize and refine robotic controllers in simulation without expert demonstrations. The resulting programs run without model calls.
-          </p> -->
-          <div class="publication-links">
-            <a class="chip" href="https://zhiqichen05.github.io/Code-as-Primitives/" target="_blank" rel="noopener">
-              <i class="fa-solid fa-globe"></i> Project
-            </a>
-          </div>
-        </article>
-
-        <article class="publication-card" style="margin-top: 1.25rem;">
-          <h3 class="publication-title">
-                                    Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?
-                            </h3>
-          <p class="publication-meta">
-            Yang Yue*†, <strong>Zhiqi Chen*</strong>, Rui Lu, Andrew Zhao, Zhaokai Wang, Yang Yue, Shiji Song, Gao Huang<br>
-            <em>NeurIPS 2025 Best Paper Runner-Up Award</em> · <em>ICML 2025 Workshop AI4Math Best Paper Award</em><br>
-            *Equal contribution · †Project lead
-          </p>
-          <div class="publication-links">
-            <a class="chip" href="https://arxiv.org/pdf/2504.13837" target="_blank" rel="noopener">
-              <i class="fa-solid fa-file-lines"></i> PDF
-            </a>
-            <a class="chip" href="https://arxiv.org/abs/2504.13837" target="_blank" rel="noopener">
-              <i class="ai ai-arxiv"></i> arXiv
-            </a>
-            <a class="chip" href="https://github.com/LeapLabTHU/limit-of-RLVR" target="_blank" rel="noopener">
-              <i class="fa-brands fa-github"></i> Code
-            </a>
-          </div>
-        </article>
-
-        <article class="publication-card" style="margin-top: 1.25rem;">
-          <h3 class="publication-title">
-            Learning Push-Grasp Synergy for Occluded Objects in Cluttered Environments
-          </h3>
-          <p class="publication-meta">
-            Ziang Li, Haorui Wu, <strong>Zhiqi Chen</strong>, Haozhe Zhang, Yuzhe Huang, Changshui Zhang<br>
-            <em>2026 IEEE International Conference on Robotics and Automation (ICRA)</em><br>
-            Vienna, Austria · pp. 1553–1560
-          </p>
-          <div class="publication-links">
-            <a class="chip" href="https://ieeexplore.ieee.org/document/11695822" target="_blank" rel="noopener">
-              <i class="fa-solid fa-file-lines"></i> IEEE Xplore
-            </a>
-            <a class="chip" href="https://doi.org/10.1109/ICRA57385.2026.11695822" target="_blank" rel="noopener">
-              <i class="fa-solid fa-link"></i> DOI
-            </a>
-            <!-- <a class="chip" href="#">
-              <i class="ai ai-arxiv"></i> [arXiv]
-            </a>
-            <a class="chip" href="#">
-              <i class="fa-brands fa-github"></i> [Code]
-            </a>
-            <a class="chip" href="#">
-              <i class="fa-solid fa-video"></i> [Talk]
-            </a> -->
-          </div>
-        </article>
-
-            </div>
-        </div>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Beyond research</p>
+        <p>I play for the Department of Automation men's football team at Tsinghua and served as captain during the 2025–2026 season.</p>
+      </div>
+      <div>
+        <h2 id="contact-title">Get in touch</h2>
+        <a class="email-link" href="mailto:zq-chen23@mails.tsinghua.edu.cn">zq-chen23@mails.tsinghua.edu.cn</a>
+        <p class="location">Tsinghua University · Beijing, China</p>
+      </div>
     </section>
+  </main>
 
-  <section class="section" id="contact">
-    <div class="section-inner">
-      <div class="contact-card">
-        <div class="contact-icon">
-          <i class="fa-solid fa-message-lines"></i>
-        </div>
-        <h2 class="section-title" style="margin-bottom: 0.75rem;">Let's Connect</h2>
-        <p class="section-body" style="margin-bottom: 1.5rem;">
-          I am actively looking for collaborations on RL and other topics. Feel free to reach out via email—I'm happy to talk!
-        </p>
-        <p>
-          <a href="mailto:zq-chen23@mails.tsinghua.edu.cn">zq-chen23@mails.tsinghua.edu.cn</a>
-        </p>
-            </div>
-        </div>
-    </section>
-
-  <footer>
-    <div class="footer-shell">
-      <div>© 2025 Zhiqi Chen · All rights reserved.</div>
-      <div class="footer-links">
-        <a href="https://github.com/zhiqichen05" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+  <footer class="site-footer page-shell">
+    <p>© 2026 Zhiqi Chen</p>
+    <p>Updated November 2026 <span aria-hidden="true">·</span> <a href="#about">Back to top ↑</a></p>
+  </footer>
 </body>
 </html>
-
